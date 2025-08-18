@@ -1,3 +1,8 @@
+dist: focal   # or bionic (Ubuntu base image)
+language: node_js
+node_js:
+  - "18"   # or version your React app needs
+
 sudo: required 
 
 services:
@@ -8,4 +13,3 @@ before_install:
 
 script: 
   - docker run -e CI=true ahmedgamil/docker-react npm run test
-  
