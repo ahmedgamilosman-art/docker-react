@@ -3,7 +3,7 @@ name: Deploy Frontend
 on:
   push:
     branches:
-      - main   # runs only when you push to 'main'
+      - master   # runs only when you push to 'main'
 
 jobs:
   build:
